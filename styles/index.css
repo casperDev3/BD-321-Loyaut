@@ -1,0 +1,23 @@
+#head2{
+    text-transform: none;
+}
+
+.head{
+    font-style: italic;
+}
+
+h1{
+    margin-top: 0;
+    color: rgb(251, 2, 2);
+    text-transform: uppercase;
+}
+
+.bg{
+    background-color: brown;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
