@@ -118,3 +118,38 @@ font-weight: 400;
 line-height: normal;
 }
 
+.round{
+    height: 200px;
+    width: 200px;
+    background-color: #f00;
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    opacity: 0.7;
+    transition: 1s;
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+
+.round:hover{
+    filter: grayscale(0%);
+    transition: 1s ease;
+    opacity: 1;
+}
+
+.test__element{
+    font-size: 30px;
+    line-height: 1.2;
+    margin: 20px;
+}
+.test__element::after{
+    content: "After";
+}
+
+.test__element::before{
+    content:  url("https://cdn4.iconfinder.com/data/icons/user-interface-vol-4-4/64/ok-512.png");
+    transform: scale(0.02);
+}
