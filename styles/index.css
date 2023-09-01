@@ -1,155 +1,77 @@
-#head2{
-    text-transform: none;
+.block_one,
+.block_two {
+    width: 100px;
+    height: 100px;
 }
 
-.head{
-    font-style: italic;
-}
-
-h1{
-    margin-top: 0;
-    color: rgb(251, 2, 2);
-    text-transform: uppercase;
-}
-
-.bg{
-    background-color: brown;
-}
-
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.box_model div{
-    background-color: rgb(244, 228, 228);
-    /* padding-left: 10px;
-    padding-right: 15px;
-    padding-top: 28px;
-    padding-bottom: 26px; */
-
-    /* padding: 28px 15px 26px 10px; */
-
-    padding: 10px 20px;
-
-    /* margin-top: 10px;
-    margin-right: 12px;
-    margin-bottom: 10px;
-    margin-left: 12px; */
-
-    /* margin: 10px 12px 10px 12px; */
-
-    margin: 10px 20px;
-
-    border-left: 2px solid #f00;
-    border-bottom: 2px solid #f00;
-    /* border-radius: 4px; */
-    border-top-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border-top-right-radius: 8px;
-   
-    /* width: 100px;
-    height: 100px; */
-
-    outline: 2px dotted rgb(15, 237, 27);
-    text-align: center;
-}
-
-.menu li {
-    list-style: none;
-}
-
-.menu li a{
-    text-decoration: none;
-    color: #000;
-    transition: 1s;
-}
-
-.menu li a:hover{
-    color: #f00;
-    transition: 1s;
-    text-decoration:underline;
-}
-
-.card{
-    width: 286px;
-    max-width: 286px;
-    margin: 30px;
-}
-.card img{
-    width: 100%;
-    height: 287px;
-    object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;   
-}
-
-.card__desc{
-    transform: translateY(-10px);
-    background-color: #32C190;
-    padding-top: 15px;
-    padding-bottom: 24px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-}
-
-.card__desc h2{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    margin-bottom: 6px;
-
-    color: #FFF;
-font-family: Inter;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-}
-
-.card__desc p{
-    margin: 0;
-    text-align: center;
-    color: #FFF;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-}
-
-.round{
-    height: 200px;
-    width: 200px;
+.block_one {
     background-color: #f00;
+    display: inline-block;
+}
+
+.block_two {
+    display: inline-block;
+    background-color: black;
+}
+
+a {
+    display: block;
+}
+
+.parent div {
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+    min-height: 120px;
     border-radius: 50%;
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    opacity: 0.7;
-    transition: 1s;
-    filter: grayscale(100%);
-    cursor: pointer;
-}
-
-.round:hover{
-    filter: grayscale(0%);
-    transition: 1s ease;
-    opacity: 1;
-}
-
-.test__element{
-    font-size: 30px;
-    line-height: 1.2;
+    background-color: blueviolet;
     margin: 20px;
 }
-.test__element::after{
-    content: "After";
+
+/*  */
+.parent :first-child {
+    background-color: red;
 }
 
-.test__element::before{
-    content:  url("https://cdn4.iconfinder.com/data/icons/user-interface-vol-4-4/64/ok-512.png");
-    transform: scale(0.02);
+.parent :last-child {
+    background-color: aqua;
+}
+
+.parent :nth-child(2n) {
+    background-color: blue;
+}
+
+/*  */
+.parent {
+    height: 1000px;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+.task {
+    background-color: #f00;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.task div {
+    background-color: #fff;
+    height: 100px;
+    width: 100px;
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+.task:hover div{
+    transition: 1s;
+    transform: rotate(0);
 }
