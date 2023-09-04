@@ -1,121 +1,42 @@
-.block_one,
-.block_two {
-    width: 100px;
-    height: 100px;
+/* @media screen and (max-width: 720px) {
+    body{
+        background-color: #1bfa07;
+        transition: 2s;
+    }
 }
 
-.block_one {
-    background-color: #f00;
-    display: inline-block;
-}
-
-.block_two {
-    display: inline-block;
-    background-color: black;
-}
-
-a {
-    display: block;
-}
-
-.parent div {
-    width: 120px;
-    height: 120px;
-    min-width: 120px;
-    min-height: 120px;
-    border-radius: 50%;
-    background-color: blueviolet;
-    margin: 20px;
-}
-
-/*  */
-.parent :first-child {
-    background-color: red;
-}
-
-.parent :last-child {
-    background-color: aqua;
-}
-
-.parent :nth-child(2n) {
-    background-color: blue;
-}
-
-/*  */
-.parent {
-    height: 1000px;
-    background-color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-}
-
-/* .task {
-    background-color: #f00;
-    width: 200px;
-    height: 200px;
-    border: 1px solid #000;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.task div {
-    background-color: #fff;
-    height: 100px;
-    width: 100px;
-    transform: rotate(45deg);
-    transition: 1s;
-}
-
-.task:hover div{
-    transition: 1s;
-    transform: rotate(0);
+@media screen and (min-width: 1600px) {
+    body{
+        background-color: #fa9907;
+        transition: 2s;
+    }
 } */
 
-.task {
-    width: 200px;
-    height: 200px;
-    background-color: #f00;
-    border: 1px solid #f00;
-    position: relative;
+.partners {
+    background-color: #eed4d4;
+    padding: 30px 0;
 }
 
-.task div{
-    width: 30px;
-    height: 30px;
-    background-color: #0bf427;
-
-    position: absolute;
-    top: -5px;
-    right: -5px;
+.partners__items {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.task :nth-child(1){
-    z-index: 4;
+.partners .item {
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 50%;
+    background-color: #f90606;
+
+    background-image: url(/img/doc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.task :nth-child(2){
-    background-color: blue;
-    width: 50px;
-    height: 50px;
-    z-index: 2;
-}
-
-.fixed {
-    width: 50px;
-    height: 50px;
-    background-color: rgb(8, 23, 240);
-
-    position: fixed;
-    bottom: 40px;
-    right: 10px;
-    border-radius: 50px;
-}
-
-body{
- height: calc(6*100vh);
+@media screen and (max-width: 1550px) {
+    .partners .item {
+        min-width: 100px;
+        min-height: 100px;
+    }
 }
