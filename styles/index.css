@@ -58,6 +58,40 @@ nav ul li a {
     color: black;
 }
 
+.burger{
+    height: 12px;
+    width: 12px;
+    position: relative;
+    display: none;
+}
+
+.burger :first-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+}
+
+.burger :nth-child(2){
+    position: absolute;
+    bottom: calc(12px/2 - 2px/2);
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.burger :last-child{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
 @media screen and (max-width: 1550px) {
     .partners .item {
         min-width: 100px;
@@ -70,7 +104,10 @@ nav ul li a {
     /* .partners{
         display: none;
     } */
-
+    .burger{
+        display: block;
+        cursor: pointer;
+    }
     .partners__items {
         flex-direction: column;
         align-items: center;
