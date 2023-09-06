@@ -39,6 +39,10 @@ header {
     justify-content: space-between;
 }
 
+.mobile_menu ul{
+    display: none;
+}
+
 a {
     text-decoration: none;
 }
@@ -171,7 +175,8 @@ nav ul li a {
     }
     .mobile_menu.active ul{
         transform: translate(0);
-        transition: 0.5s;    }
+        transition: 0.5s;    
+    }
 }
 
 @media screen and (max-width: 480px) {
