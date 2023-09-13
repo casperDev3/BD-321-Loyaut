@@ -1,0 +1,23 @@
+.partners {
+    padding: 20px 0;
+    background-color: #eebbbb;
+
+    &__title {
+        background-color: aqua;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        &_logo {
+            border-radius: 50%;
+            background-color: #f00;
+            height: 100px;
+            width: 100px;
+            &-active{
+                background-color: blue;
+            }
+        }
+    }
+}
