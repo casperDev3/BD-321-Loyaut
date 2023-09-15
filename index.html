@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/index.css">
 </head>
+
 <body>
-    <!-- block__element_subElement-modificator -->
-    <section class="partners">
-        <h2 class="partners__title">Test title</h2>
-        <div class="partners__items">
-            <div class="partners__items_logo"></div>
-            <div class="partners__items_logo partners__items_logo-active"></div>
-            <div class="partners__items_logo"></div>
-            <div class="partners__items_logo"></div>
-            <div class="partners__items_logo"></div>
-            <div class="partners__items_logo"></div>
-            <div class="partners__items_logo"></div>
-        </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
-    <script src="/scripts/index.js"></script>
+    <style>
+        label,
+        input {
+            display: block;
+        }
+    </style>
+    <form>
+        <legend>Title Form</legend>
+        <!-- text -->
+        <label for="some">Some text</label>
+        <input id="some" name="text" type="text" placeholder="Enter some text..." required>
+        <!-- number -->
+        <label for="number">Phone</label>
+        <input type="number" name="number" id="number" required>
+        <!-- mail -->
+        <label for="mail">Mail</label>
+        <input type="email" name="email" id="mail" required>
+        <!-- color -->
+        <label for="color">Chose Color</label>
+        <input type="color" name="color" id="color">
+        <!-- date -->
+        <label for="date">Date:</label>
+        <input type="date" name="date" id="date">
+        <!-- time -->
+        <label for="time">Time</label>
+        <input type="time" name="time" id="time">
+        <!-- radio btn -->
+        <label for="radio1">Radio1</label>
+        <input type="radio" name="test" id="radio1">
+        <label for="radio2">Radio2</label>
+        <input type="radio" name="test" id="radio2">
+        <!-- submit -->
+        <input type="submit" value="Send Form">
+    </form>
 </body>
+
 </html>
